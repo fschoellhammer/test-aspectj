@@ -1,0 +1,17 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.12.+'
+        // aspectj - http://fernandocejas.com/2014/08/03/aspect-oriented-programming-in-android/
+        classpath 'org.aspectj:aspectjtools:1.8.1'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
